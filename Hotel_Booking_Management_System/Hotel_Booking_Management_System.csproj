@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC408AE5-6413-4D24-99C5-91532F18B5E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hotel_Booking_Management_System</RootNamespace>
+    <AssemblyName>Hotel_Booking_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBookingHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookingHistory.Designer.cs">
+      <DependentUpon>frmBookingHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCancelBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCancelBooking.Designer.cs">
+      <DependentUpon>frmCancelBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompteBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompteBooking.Designer.cs">
+      <DependentUpon>frmCompteBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerReservationPayementProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerReservationPayementProcess.Designer.cs">
+      <DependentUpon>frmCustomerReservationPayementProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditBooking.Designer.cs">
+      <DependentUpon>frmEditBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHelp.Designer.cs">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHotalDeals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHotalDeals.Designer.cs">
+      <DependentUpon>frmHotalDeals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopularamenities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopularamenities.Designer.cs">
+      <DependentUpon>frmPopularamenities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignUp.Designer.cs">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTravelersRoomSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTravelersRoomSelector.Designer.cs">
+      <DependentUpon>frmTravelersRoomSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployee.Designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClient.Designer.cs">
+      <DependentUpon>frmClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogInPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogInPage.Designer.cs">
+      <DependentUpon>frmLogInPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewBooking.Designer.cs">
+      <DependentUpon>frmViewBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBookingHistory.resx">
+      <DependentUpon>frmBookingHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCancelBooking.resx">
+      <DependentUpon>frmCancelBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClient.resx">
+      <DependentUpon>frmClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompteBooking.resx">
+      <DependentUpon>frmCompteBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerReservationPayementProcess.resx">
+      <DependentUpon>frmCustomerReservationPayementProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditBooking.resx">
+      <DependentUpon>frmEditBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelp.resx">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHotalDeals.resx">
+      <DependentUpon>frmHotalDeals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogInPage.resx">
+      <DependentUpon>frmLogInPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPopularamenities.resx">
+      <DependentUpon>frmPopularamenities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignUp.resx">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTravelersRoomSelector.resx">
+      <DependentUpon>frmTravelersRoomSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewBooking.resx">
+      <DependentUpon>frmViewBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0kjd45q6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\0kjd45q6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyClassLibrary\MyClassLibrary.csproj">
+      <Project>{22b1a841-00ec-4ce8-869e-c33830fbe52a}</Project>
+      <Name>MyClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top-1544707638.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PRV_LP_G_Card_Priceline_VS_360x230_112321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2023-11-30 150047.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
